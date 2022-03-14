@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      href="../html-css-cheatsheet-starting/css/styles.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <p><strong>MDN </strong><span class="lite">lite</span></p>
+
+  <header><h1>CSS Selectors & Specificity</h1></header>
+  <body>
+    <div id="selectors">
+      <h2>Common class selectors</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Selector Tag</th>
+            <th>Selector Type</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="code">" * "</span></td>
+            <td>Universal</td>
+            <td>Selects all element on the document.</td>
+          </tr>
+          <tr>
+            <td><span class="code">" ElementName "</span></td>
+            <td>Type</td>
+            <td>Selects all element that have the given node name.</td>
+          </tr>
+          <tr>
+            <td>
+              <span class="code">" <strong>.</strong>ClassName "</span>
+            </td>
+            <td>Class</td>
+            <td>
+              Selects all element that have the given <a>class</a> attribute.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span class="code">" <strong>#</strong>IDName "</span>
+            </td>
+            <td>ID</td>
+            <td>
+              Selects an element based on the value of its <a>id</a> attribute.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div id="Specificity">
+      <h2>Specificity Chain</h2>
+      <h3>The following list of selector types increases by specificity:</h3>
+      <ul>
+        <li><span class="code">Type selectors</span></li>
+        <li><span class="code">Class selectors</span></li>
+        <li><span class="code">ID selectors</span></li>
+      </ul>
+      <p>
+        The universal selector <span class="tag">(" * ")</span> has no effect on
+        specificity.
+      </p>
+    </div>
+    <footer>
+      <p>
+        For more information, visit:<a
+          href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance#specificity_2"
+          >MDN Specificity</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>
